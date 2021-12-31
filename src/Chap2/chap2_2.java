@@ -1,6 +1,6 @@
 package Chap2;
 
-public class chap2 {
+public class chap2_2 {
     public static void main(String[] args) {
         final int constantNum = 10; // 선언과 동시에 초기화가 반드시 필요하다, 다시 수정 불가능한 상수(constant)
         long testNum = 100_000_000_000l; //long type이고 _로 구분 가능하다, 끝에 l을 붙여줘야 한다
