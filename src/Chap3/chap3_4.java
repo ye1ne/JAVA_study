@@ -34,6 +34,24 @@ public class chap3_4 {
         System.out.println("즉, 피연산자의 1의 보수를 얻는것과 같은 효과이다");
         System.out.println(0xAB);
         System.out.println(~0xAB);
+        //쉬프트 연산자
+        int dec = 8;
+        System.out.printf("%d >> %d = %4d \t%s%n",dec,0,dec >>0,toBinaryString(dec>>0));
+        System.out.printf("%d >> %d = %4d \t%s%n",dec,2,dec >>2,toBinaryString(dec>>2));
+        System.out.printf("%d << %d = %4d \t%s%n",dec,7,dec <<7,toBinaryString(dec<<7));
+        dec = -8;
+        System.out.printf("%d >> %d = %4d \t%s%n",dec,0,dec >>0,toBinaryString(dec>>0));
+        System.out.printf("%d >> %d = %4d \t%s%n",dec,4,dec >>4,toBinaryString(dec>>4));
+
+        int x = 0 ;
+        int result = x > 0 ? 1 : (x ==0 ? 0 : -1);
+
+        //6.2 대입연산자
+        int i;
+        int j;
+        i = j = 3; //오른쪽에서 왼쪽으로 결합됨
+        i *= 10 + j;
+        i = i*(10+j);//위와 같은거임에 헷갈리지 말자
     }
     static String toBinaryString(int x){
         String zero = "00000000000000000000000000000000";
