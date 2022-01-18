@@ -51,3 +51,19 @@ class Card{
     String c; //기본 null값
 
 }
+class TestClass{
+    int iv;
+    static int cv;
+    void instanceMethod(){
+        System.out.println(iv); //인스턴스변수와
+        System.out.println(cv); //클래스 변수 모두 사용가능하다
+    }
+    void instaceMethod2(){
+        instanceMethod(); //인스턴스간 호출은 상관ㄴㄴ
+        System.out.println(iv); //인스턴스간 호출은 상관 ㄴㄴ
+    }
+    static void staticMethod(){
+        //System.out.println(iv); -> 사용불가능하다, 에러뜸뜸
+       System.out.println(cv);
+    }
+}
